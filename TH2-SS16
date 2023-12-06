@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+    FILE *file = NULL;
+    int kytuHientai =0;
+    file = fopen("Session27_Practic02.txt","r");
+    if (file !=NULL){
+     do{
+        kytuHientai = fgetc(file);
+        printf("%c",kytuHientai);
+    }while (kytuHientai !=EOF);
+    fclose(file);
+    }
+   return 0;
+}
